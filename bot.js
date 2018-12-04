@@ -38,13 +38,13 @@ client.on('guildMemberAdd',async member => {
             ctx.fontSize = '72px';
             ctx.fillStyle = "#ffffff";
             ctx.textAlign = "center";
-            ctx.fillText(member.user.username, 435, 174);
+            ctx.fillText(member.user.username, 410, 174);
            
             ctx.font = '18px Arial Bold';
             ctx.fontSize = '72px';
             ctx.fillStyle = "#ffffff";
             ctx.textAlign = "center";
-            ctx.fillText(`${member.guild.memberCount} Members`, 515, 195);
+            ctx.fillText(`${member.guild.memberCount} Members`, 505, 195);
            
             let Avatar = Canvas.Image;
             let ava = new Avatar;
