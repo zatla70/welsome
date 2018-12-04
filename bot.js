@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
+const fs = require('fs');
 
   const w = ['./welcome.png'];
 client.on('guildMemberAdd',async member => {
@@ -55,7 +55,7 @@ client.on('guildMemberAdd',async member => {
             ctx.clip();
             ctx.drawImage(ava, 36, 21, 260, 260);
              
-            let c = member.guild.channels.find('name', `chat`)
+            let c = member.guild.channels.find('name', `welcome`)
             if(!c) return;
             c.sendFile(canvas.toBuffer());
    
