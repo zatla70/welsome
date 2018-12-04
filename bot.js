@@ -52,7 +52,6 @@ client.on('guildMemberAdd',async member => {
             let c = member.guild.channels.find('name', `welcome`)
             if(!c) return;
             c.sendFile(canvas.toBuffer());
-            c.sendFile(canvas.toBuffer())
       setTimeout(async function(){
         c.send('**  ̲W̲e̲l̲c̲o̲m̲e   ̲t̲o  ̲Server BetaShop  :two_hearts: :sparkling_heart:  :sparkles: **')
       }, 2000);
@@ -96,7 +95,7 @@ let channel = client.channels.get("519145834714103808");
                     console.log(3);
                     console.log(`${member} joined over ${Invite.inviter}'s invite ${Invite.code}`)
                   setTimeout(async function(){
-        channel.send('**Invite By ${Invite.inviter}**')
+        channel.send(`**Invite By ${Invite.inviter}**`)
       }, 2000);          
  }
             dat[Inv] = Invite.uses;
